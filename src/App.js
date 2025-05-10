@@ -1,10 +1,12 @@
 import Main from "./pages/main/Main";
+import GlobalStyle from "./styles/globalStyles";
 
 function App() {
   return (
-    <div>
+    <>
+      <GlobalStyle />
       <Main />
-    </div>
+    </>
   );
 }
 export default App;
