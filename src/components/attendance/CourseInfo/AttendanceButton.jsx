@@ -18,8 +18,8 @@ const ButtonContainer = styled.div`
 `;
 
 // 출석하기 버튼
-const Button = () => {
+const AttendanceButton = () => {
   return <ButtonContainer>출석하기</ButtonContainer>;
 };
 
-export default Button;
+export default AttendanceButton;
