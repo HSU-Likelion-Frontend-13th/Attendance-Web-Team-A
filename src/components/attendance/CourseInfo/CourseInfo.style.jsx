@@ -42,6 +42,7 @@ export const CourseColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   gap: 35px;
 `;
 
@@ -49,6 +50,13 @@ export const MainText = styled.div`
   font-size: 40px;
   font-weight: 700;
   color: ${c.black};
+  max-width: 80%;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // 2줄까지 보이기
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export const SubText = styled.div`
