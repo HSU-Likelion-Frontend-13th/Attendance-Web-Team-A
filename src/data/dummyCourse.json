@@ -1,0 +1,62 @@
+[
+  {
+    "id": "C001",
+    "name": "미래사회와 정부",
+    "day": 1,
+    "startTime": "13:30",
+    "endTime": "15:00",
+    "location": "상상관502",
+    "section": "7분반",
+    "professor": "강문호"
+  },
+  {
+    "id": "C002",
+    "name": "진채형상1",
+    "day": 2,
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "location": "지선관301",
+    "section": "A분반",
+    "professor": "김선태"
+  },
+  {
+    "id": "C003",
+    "name": "인포그래픽",
+    "day": 3,
+    "startTime": "12:00",
+    "endTime": "15:00",
+    "location": "창의관502",
+    "section": "D분반",
+    "professor": "장경국"
+  },
+  {
+    "id": "C004",
+    "name": "회화연구1",
+    "day": 3,
+    "startTime": "15:00",
+    "endTime": "18:00",
+    "location": "지선관305",
+    "section": "A분반",
+    "professor": "윤규섭"
+  },
+  {
+    "id": "C005",
+    "name": "수묵형상1",
+    "day": 4,
+    "startTime": "09:00",
+    "endTime": "12:00",
+    "location": "지선관301",
+    "section": "A분반",
+    "professor": "한동호"
+  },
+  {
+    "id": "C006",
+    "name": "모션그래픽",
+    "day": 4,
+    "startTime": "12:00",
+    "endTime": "15:00",
+    "location": "창의관304",
+    "section": "C분반",
+    "professor": "박원철"
+  }
+]
