@@ -3,13 +3,14 @@ import * as S from "./Profile.style";
 import ProfileButton from "./ProfileButton";
 import { IoPersonSharp } from "react-icons/io5";
 import { IoIosUnlock } from "react-icons/io";
+import user from "../../../data/dummyUser.json";
 
 const MyInfo = () => {
   return (
     <S.MyInfoContainer>
       <S.UserInfo>
-        <S.UserName>이지민</S.UserName>
-        <S.UserTrack>동양화과 / 미디어 디자인 트랙</S.UserTrack>
+        <S.UserName>{user.name}</S.UserName>
+        <S.UserTrack>{user.tracks.join(" / ")}</S.UserTrack>
       </S.UserInfo>
       <S.ButtonRow>
         <ProfileButton icon={<IoPersonSharp />} label="마이페이지" />

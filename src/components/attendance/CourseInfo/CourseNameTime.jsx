@@ -1,18 +1,18 @@
 import React from "react";
 import * as S from "./CourseInfo.style";
 
-const ClassNameTime = () => {
+const ClassNameTime = ({ course }) => {
   return (
     <S.CourseNameTimeWrapper>
       <S.CourseColumn>
-        <S.MainText>강의명</S.MainText>
-        <S.SubText>강의실</S.SubText>
+        <S.MainText>{course.name}</S.MainText>
+        <S.SubText>{course.location}</S.SubText>
       </S.CourseColumn>
       <S.CourseColumn>
-        <S.MainText>강의시간</S.MainText>
+        <S.MainText>{`${course.startTime}~${course.endTime}`}</S.MainText>
         <S.SubRow>
-          <S.SubText>분반</S.SubText>
-          <S.SubText>교수님</S.SubText>
+          <S.SubText>{course.section}</S.SubText>
+          <S.SubText>{course.professor}</S.SubText>
         </S.SubRow>
       </S.CourseColumn>
     </S.CourseNameTimeWrapper>
