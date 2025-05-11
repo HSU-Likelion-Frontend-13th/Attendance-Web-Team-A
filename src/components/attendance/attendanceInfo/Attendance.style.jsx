@@ -19,6 +19,7 @@ export const AttendanceInfoWrapper = styled.div`
   gap: 28px;
 `;
 
+// AttendanceContent
 export const ContentWrapper = styled.div`
   width: 1056px;
   height: 198px;
@@ -28,7 +29,6 @@ export const ContentWrapper = styled.div`
   border-radius: 40px;
 `;
 
-// AttendanceContent
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
