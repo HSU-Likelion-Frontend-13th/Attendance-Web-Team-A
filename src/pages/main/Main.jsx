@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../../components/attendance/header/Header";
 import * as S from "./Main.style";
 
 import CourseInfo from "../../components/attendance/CourseInfo/CourseInfo";
@@ -8,7 +9,7 @@ import Profile from "../../components/attendance/profile/Profile";
 const Main = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <S.MainContainer>
         <S.LeftColumn>
           <CourseInfo />
