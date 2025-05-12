@@ -22,7 +22,7 @@ export const TimeWrapper = styled.div`
 `;
 
 export const TimeLabel = styled.div`
-    
+    font-size: 30px;
 `;
 
 export const TimeText = styled.div`
