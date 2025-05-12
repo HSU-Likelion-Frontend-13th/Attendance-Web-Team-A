@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./Main.style";
 
-import CourseInfo from "../../components/attendance/CourseInfo/CourseInfo";
+import CourseInfo from "../../components/attendance/courseInfo/CourseInfo";
 import AttendanceInfo from "../../components/attendance/attendanceInfo/AttendanceInfo";
 import Profile from "../../components/attendance/profile/Profile";
 
