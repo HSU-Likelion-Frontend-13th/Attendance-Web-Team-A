@@ -40,10 +40,20 @@ export const StatusText = styled.div`
 `;
 
 // CourseNameTime
+export const NoCourseText = styled.div`
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+`;
+
 export const CourseNameTimeWrapper = styled.div`
   width: 653px;
   height: 198px;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   background-color: ${c.boxContentColor};
   border-radius: 40px;
 `;
