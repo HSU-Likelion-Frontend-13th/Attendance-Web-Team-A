@@ -3,8 +3,8 @@ import c from "../../../styles/colors";
 
 // AttendanceInfo
 export const AttendanceInfoContainer = styled.div`
-  width: 1136px;
-  height: 354px;
+  width: 59.16vw;
+  height: 22.12rem;
   background-color: ${c.boxColor};
   border-radius: 30px;
   display: flex;
@@ -16,13 +16,13 @@ export const AttendanceInfoContainer = styled.div`
 export const AttendanceInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 1.75rem;
 `;
 
 // AttendanceContent
 export const ContentWrapper = styled.div`
-  width: 1056px;
-  height: 198px;
+  width: 55vw;
+  height: 12.37rem;
   display: flex;
   align-items: center;
   background-color: ${c.boxContentColor};
@@ -33,10 +33,10 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 41px;
+  padding-left: 2.56rem;
   margin: 0;
-  gap: 14px;
-  font-size: 30px;
+  gap: 0.87rem;
+  font-size: 1.87rem;
 `;
 
 export const TextLine = styled.div`
@@ -48,7 +48,7 @@ export const TextLine = styled.div`
 `;
 
 export const Alert = styled.div`
-  font-size: 25px;
+  font-size: 1.56rem;
   font-weight: 200;
-  margin-top: 3px;
+  margin-top: 0.18rem;
 `;

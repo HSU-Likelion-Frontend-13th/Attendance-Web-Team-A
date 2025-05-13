@@ -7,7 +7,7 @@ const AttendanceInfo = () => {
   return (
     <S.AttendanceInfoContainer>
       <S.AttendanceInfoWrapper>
-        <BoxTitle width="287px" titleName={"출석 시간 안내"} />
+        <BoxTitle width="14.94vw" titleName={"출석 시간 안내"} />
         <AttendanceContent />
       </S.AttendanceInfoWrapper>
     </S.AttendanceInfoContainer>

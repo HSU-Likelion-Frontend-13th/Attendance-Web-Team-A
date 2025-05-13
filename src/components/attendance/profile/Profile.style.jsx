@@ -3,8 +3,8 @@ import c from "../../../styles/colors";
 
 // Profile
 export const ProfileContainer = styled.div`
-  width: 665px;
-  height: 354px;
+  width: 34.64vw;
+  height: 22.13rem;
   background-color: ${c.boxColor};
   border-radius: 30px;
   display: flex;
@@ -16,7 +16,7 @@ export const ProfileContainer = styled.div`
 export const ProfileWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 1.75rem;
 `;
 
 export const MyImageInfoContainer = styled.div`
@@ -24,13 +24,13 @@ export const MyImageInfoContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 25px;
+  gap: 1.56rem;
 `;
 
 // MyImage
 export const MyImageWrapper = styled.div`
-  width: 206px;
-  height: 206px;
+  width: 10.73vw;
+  height: 12.88rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +46,8 @@ export const MyImageWrapper = styled.div`
 
 // MyInfo
 export const MyInfoContainer = styled.div`
-  width: 358px;
-  height: 198px;
+  width: 18.65vw;
+  height: 12.38rem;
   background-color: ${c.boxContentColor};
   border-radius: 20px;
   display: flex;
@@ -56,27 +56,27 @@ export const MyInfoContainer = styled.div`
 `;
 
 export const UserInfo = styled.div`
-  height: 136.75px;
+  height: 8.55rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 34px;
-  gap: 15px;
+  margin-left: 2.13rem;
+  gap: 0.94rem;
 `;
 
 export const UserName = styled.div`
-  font-size: 27px;
+  font-size: 1.69rem;
   font-weight: 700;
 `;
 
 export const UserTrack = styled.div`
-  font-size: 18px;
+  font-size: 1.13rem;
   font-weight: 400;
 `;
 
 export const ButtonRow = styled.div`
-  height: 61.25px;
+  height: 3.83rem;
   display: flex;
   border-top: 1px solid #bababa;
 

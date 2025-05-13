@@ -1,26 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import * as S from "./Header.style";
 
-const Time = () => {
-  const [timer, setTimer] = useState(new Date());
+const Time = ({ timer }) => {
+  // 시간 포맷 함수
+  const formatTime = (timer) => {
+    if (!(timer instanceof Date)) return ""; // Date 객체인지
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimer(new Date());
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
+    const hours = String(timer.getHours()).padStart(2, "0");
+    const minutes = String(timer.getMinutes()).padStart(2, "0");
+    const seconds = String(timer.getSeconds()).padStart(2, "0");
 
-  const hours = String(timer.getHours()).padStart(2, "0");
-  const minutes = String(timer.getMinutes()).padStart(2, "0");
-  const seconds = String(timer.getSeconds()).padStart(2, "0");
-
-  const clock = `${hours}:${minutes}:${seconds}`;
+    return `${hours}:${minutes}:${seconds}`;
+  };
 
   return (
     <S.TimeWrapper>
       <S.TimeLabel>현재 시각</S.TimeLabel>
-      <S.TimeText>{clock}</S.TimeText>
+      <S.TimeText>{formatTime(timer)}</S.TimeText>
     </S.TimeWrapper>
   );
 };
