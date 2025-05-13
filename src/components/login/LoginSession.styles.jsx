@@ -13,13 +13,13 @@ export const LoginSessionWrapper = styled.div`
 export const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 39px;
 `;
 
 export const LabelRow = styled.div`
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 37px;
 `;
 
 export const LabelText = styled.label`
@@ -29,11 +29,10 @@ export const LabelText = styled.label`
 `;
 
 export const CheckBoxWrapper = styled.div`
-  margin-top: 10px;
+  margin-bottom: 21px;
 `;
 
 export const ButtonWrapper = styled.div`
-  margin-top: 20px;
   display: flex;
   justify-content: center;
 `;
