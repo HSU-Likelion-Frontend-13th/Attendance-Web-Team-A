@@ -1,5 +1,7 @@
 // -----출석 시간 판별 함수 -----
 export const checkAttendanceTime = (course, timer) => {
+  if (!course) return "vacation";
+
   const [startHour, startMin] = course.startTime.split(":").map(Number);
   const [endHour, endMin] = course.endTime.split(":").map(Number);
 

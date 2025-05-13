@@ -22,6 +22,14 @@ export const getAttendanceStyle = (status, clicked, c) => {
 
 // ----- 출석안내 스타일 함수 -----
 export const getAttendanceMessage = (status) => {
+  // vacation
+  if (status === "vacation") {
+    return {
+      text: "현재는 출석체크 기간이 아닙니다!",
+      color: "#EB3223",
+    };
+  }
+
   // unavailable
   if (status === "unavailable") {
     return {
