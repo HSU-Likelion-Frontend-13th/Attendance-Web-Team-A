@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "./Input";
 import CheckBox from "./CheckBox";
-import ConfirmButton from "../../components/ConfirmButton";
+import ConfirmButton from "../ConfirmButton";
 import * as S from "./LoginSession.styles";
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import LoginHeader from './header/LoginHeader';
-import LoginSession from './LoginSession';
+import LoginHeader from '../../components/login/header/LoginHeader';
+import LoginSession from '../../components/login/LoginSession';
 
 const Login = () => {
     return (
