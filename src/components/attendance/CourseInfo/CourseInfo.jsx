@@ -17,7 +17,7 @@ const CourseInfo = ({ timer, onAttendance }) => {
     <S.CourseInfoContainer>
       <S.CourseInfoWrapper>
         <S.CourseInfoContent>
-          <BoxTitle width="287px" titleName={"현재 · 다음강의"} />
+          <BoxTitle width="14.94vw" titleName={"현재 · 다음강의"} />
           <S.StatusText color={color}>{text}</S.StatusText>
         </S.CourseInfoContent>
         <S.CourseTimeContainer>

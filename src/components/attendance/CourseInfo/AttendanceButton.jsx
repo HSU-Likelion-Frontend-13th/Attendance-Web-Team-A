@@ -5,11 +5,11 @@ import { checkAttendanceTime } from "../../../utils/checkTime";
 import { getAttendanceStyle } from "../../../utils/checkAttendance";
 
 const ButtonContainer = styled.div`
-  width: 349px;
-  height: 191px;
+  width: 18.18vw;
+  height: 11.94rem;
   background-color: ${({ $bgColor }) => $bgColor};
   color: ${({ $textColor }) => $textColor};
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
   display: flex;

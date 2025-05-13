@@ -5,8 +5,8 @@ import WARNING from "../../assets/images/warning.png";
 import ConfirmButton from "../ConfirmButton";
 
 const WarningContainer = styled.div`
-  width: 1315px;
-  height: 507px;
+  width: 68.49vw;
+  height: 31.69rem;
   background-color: ${c.backgroundColor};
   border: solid 1px ${c.boxColor};
   border-radius: 25px;
@@ -15,7 +15,7 @@ const WarningContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 63px;
+  gap: 3.94rem;
 `;
 
 const Overlay = styled.div`
@@ -34,16 +34,16 @@ const Overlay = styled.div`
 const ContentRow = styled.div`
   display: flex;
   align-items: center;
-  gap: 58px;
+  gap: 3.63rem;
 `;
 
 const WarningImage = styled.img`
-  width: 119px;
-  height: 119px;
+  width: 7.44rem;
+  height: 7.44rem;
 `;
 
 const WarningMessage = styled.div`
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 400;
   color: #979797;
   line-height: 1.6;
@@ -51,8 +51,8 @@ const WarningMessage = styled.div`
 
 const ButtonRow = styled.div`
   position: absolute;
-  bottom: 47px;
-  right: 46px;
+  bottom: 2.94rem;
+  right: 2.88rem;
 `;
 
 const Warning = ({ onConfirm }) => {

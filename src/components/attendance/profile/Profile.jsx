@@ -8,7 +8,7 @@ const Profile = () => {
   return (
     <S.ProfileContainer>
       <S.ProfileWrapper>
-        <BoxTitle width="232px" titleName={"나의 프로필"} />
+        <BoxTitle width="12.08vw" titleName={"나의 프로필"} />
         <S.MyImageInfoContainer>
           <MyImage />
           <MyInfo />

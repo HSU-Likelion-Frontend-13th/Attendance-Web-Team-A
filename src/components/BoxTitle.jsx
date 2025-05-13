@@ -2,11 +2,11 @@ import styled from "styled-components";
 import c from "../styles/colors";
 
 const TitleBoxContainer = styled.div`
-  width: ${(props) => props.width || "287px"};
-  height: 61px;
+  width: ${(props) => props.width || "14.94vw"};
+  height: 3.81rem;
   background-color: ${c.titleColor};
   color: ${c.white};
-  font-size: 30px;
+  font-size: 1.87rem;
   font-weight: 500;
   text-align: center;
   display: flex;
