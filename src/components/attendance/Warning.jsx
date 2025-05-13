@@ -18,6 +18,19 @@ const WarningContainer = styled.div`
   gap: 63px;
 `;
 
+const Overlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); // 반투명
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+`;
+
 const ContentRow = styled.div`
   display: flex;
   align-items: center;
@@ -42,21 +55,23 @@ const ButtonRow = styled.div`
   right: 46px;
 `;
 
-const Warning = () => {
+const Warning = ({ onConfirm }) => {
   return (
-    <WarningContainer>
-      <ContentRow>
-        <WarningImage src={WARNING} alt="Warning" />
-        <WarningMessage>
-          현재는 출석 체크 시간이 아닙니다.
-          <br />
-          시간을 확인 하시고 다시 출석 해주세요.
-        </WarningMessage>
-      </ContentRow>
-      <ButtonRow>
-        <ConfirmButton title="확인" />
-      </ButtonRow>
-    </WarningContainer>
+    <Overlay>
+      <WarningContainer>
+        <ContentRow>
+          <WarningImage src={WARNING} alt="Warning" />
+          <WarningMessage>
+            현재는 출석 체크 시간이 아닙니다.
+            <br />
+            시간을 확인 하시고 다시 출석 해주세요.
+          </WarningMessage>
+        </ContentRow>
+        <ButtonRow>
+          <ConfirmButton title="확인" onClick={onConfirm} />
+        </ButtonRow>
+      </WarningContainer>
+    </Overlay>
   );
 };
 
