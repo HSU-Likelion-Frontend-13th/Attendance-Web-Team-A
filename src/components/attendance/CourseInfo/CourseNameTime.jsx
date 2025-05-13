@@ -2,6 +2,15 @@ import React from "react";
 import * as S from "./CourseInfo.style";
 
 const ClassNameTime = ({ course }) => {
+  // course가 null일 때
+  if (!course) {
+    return (
+      <S.CourseNameTimeWrapper>
+        <S.NoCourseText>강의 정보가 없습니다</S.NoCourseText>
+      </S.CourseNameTimeWrapper>
+    );
+  }
+
   return (
     <S.CourseNameTimeWrapper>
       <S.CourseColumn>

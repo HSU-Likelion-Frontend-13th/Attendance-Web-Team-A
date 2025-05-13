@@ -3,8 +3,8 @@ import c from "../../../styles/colors";
 
 // CourseInfo
 export const CourseInfoContainer = styled.div`
-  width: 1136px;
-  height: 354px;
+  width: 59.17vw;
+  height: 22.13rem;
   background-color: ${c.boxColor};
   border-radius: 30px;
   display: flex;
@@ -16,7 +16,7 @@ export const CourseInfoContainer = styled.div`
 export const CourseInfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 1.75rem;
 `;
 
 export const CourseTimeContainer = styled.div`
@@ -24,14 +24,36 @@ export const CourseTimeContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 52px;
+  gap: 3.25rem;
+`;
+
+export const CourseInfoContent = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.69rem;
+`;
+
+export const StatusText = styled.div`
+  font-size: 2.19rem;
+  font-weight: 600;
+  color: ${({ color }) => color};
 `;
 
 // CourseNameTime
+export const NoCourseText = styled.div`
+  font-size: 2.25rem;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+`;
+
 export const CourseNameTimeWrapper = styled.div`
-  width: 653px;
-  height: 198px;
+  width: 34.01vw;
+  height: 12.38rem;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   background-color: ${c.boxContentColor};
   border-radius: 40px;
 `;
@@ -43,11 +65,11 @@ export const CourseColumn = styled.div`
   justify-content: center;
   text-align: center;
   align-items: center;
-  gap: 35px;
+  gap: 2.19rem;
 `;
 
 export const MainText = styled.div`
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   color: ${c.black};
   max-width: 80%;
@@ -60,7 +82,7 @@ export const MainText = styled.div`
 `;
 
 export const SubText = styled.div`
-  font-size: 30px;
+  font-size: 1.88rem;
   font-weight: 200;
   color: ${c.courseColor};
 `;
@@ -68,5 +90,5 @@ export const SubText = styled.div`
 export const SubRow = styled.div`
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 3.13rem;
 `;

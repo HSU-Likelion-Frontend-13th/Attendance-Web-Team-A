@@ -3,9 +3,9 @@ import styled from "styled-components";
 import c from "../styles/colors";
 
 const ButtonContainer = styled.button`
-  width: ${({ width }) => width || "307px"};
-  height: ${({ height }) => height || "76px"};
-  font-size: ${({ fontSize }) => fontSize || "35px"};
+  width: ${({ width }) => width || "15.99vw"};
+  height: ${({ height }) => height || "4.75rem"};
+  font-size: ${({ fontSize }) => fontSize || "2.19rem"};
   font-weight: ${({ fontWeight }) => fontWeight || "400"};
   background-color: ${c.confirmBtnColor};
   color: white;

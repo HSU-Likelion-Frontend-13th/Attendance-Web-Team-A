@@ -6,14 +6,14 @@ const ButtonWrapper = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  font-size: 15px;
+  gap: 0.37rem;
+  font-size: 0.93rem;
   font-weight: 300;
   cursor: pointer;
 
   svg {
-    width: 25px;
-    height: 25px;
+    width: 1.56rem;
+    height: 1.56rem;
   }
 `;
 
