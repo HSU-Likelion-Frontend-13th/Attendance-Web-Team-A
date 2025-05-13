@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import c from "../../../styles/colors";
-import {
-  checkAttendanceTime,
-  getAttendanceStyle,
-} from "../../../utils/checkTime";
+import { checkAttendanceTime } from "../../../utils/checkTime";
+import { getAttendanceStyle } from "../../../utils/checkAttendance";
 
 const ButtonContainer = styled.div`
   width: 349px;

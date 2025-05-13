@@ -27,6 +27,18 @@ export const CourseTimeContainer = styled.div`
   gap: 52px;
 `;
 
+export const CourseInfoContent = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 27px;
+`;
+
+export const StatusText = styled.div`
+  font-size: 35px;
+  font-weight: 600;
+  color: ${({ color }) => color};
+`;
+
 // CourseNameTime
 export const CourseNameTimeWrapper = styled.div`
   width: 653px;
