@@ -23,7 +23,13 @@ const LoginForm = () => {
             </S.CheckBoxWrapper>
 
             <S.ButtonWrapper>
-            <ConfirmButton title="LOGIN" width="523px" height="91px" />
+            <ConfirmButton
+                title="LOGIN"
+                width="523px"
+                height="91px"
+                fontSize="40px"
+                fontWeight="600"
+            />
             </S.ButtonWrapper>
         </S.FormWrapper>
     );
