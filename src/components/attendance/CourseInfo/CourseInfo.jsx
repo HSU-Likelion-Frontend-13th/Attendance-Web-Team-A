@@ -5,14 +5,20 @@ import CourseNameTime from "./CourseNameTime";
 import AttendanceButton from "./AttendanceButton";
 import course from "../../../data/dummyCourse.json";
 
-const CourseInfo = () => {
+const CourseInfo = ({ timer, onAttendance }) => {
+  let nowClass = course[3];
+
   return (
     <S.CourseInfoContainer>
       <S.CourseInfoWrapper>
         <BoxTitle width="287px" titleName={"현재 · 다음강의"} />
         <S.CourseTimeContainer>
-          <CourseNameTime course={course[5]} />
-          <AttendanceButton />
+          <CourseNameTime course={nowClass} />
+          <AttendanceButton
+            course={nowClass}
+            timer={timer}
+            onAttendance={onAttendance}
+          />
         </S.CourseTimeContainer>
       </S.CourseInfoWrapper>
     </S.CourseInfoContainer>

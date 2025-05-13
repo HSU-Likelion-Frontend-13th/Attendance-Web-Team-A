@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import c from "../../../styles/colors";
+import {
+  checkAttendanceTime,
+  getAttendanceStyle,
+} from "../../../utils/checkTime";
 
 const ButtonContainer = styled.div`
   width: 349px;
   height: 191px;
-  background-color: ${c.boxContentColor};
-  color: ${c.black};
+  background-color: ${({ $bgColor }) => $bgColor};
+  color: ${({ $textColor }) => $textColor};
   font-size: 40px;
   font-weight: 600;
   text-align: center;
@@ -18,8 +22,34 @@ const ButtonContainer = styled.div`
 `;
 
 // 출석하기 버튼
-const AttendanceButton = () => {
-  return <ButtonContainer>출석하기</ButtonContainer>;
+const AttendanceButton = ({ course, timer, onAttendance }) => {
+  const [clicked, setClicked] = useState(false); // 클릭 여부
+  const [status, setStatus] = useState("unavailable"); // 출석 상태
+
+  // 클릭하면 현재 상태에 따라 수행
+  const handleClick = () => {
+    const result = checkAttendanceTime(course, timer);
+
+    if (result === "unavailable") {
+      onAttendance(false); // Warning 모달 띄우기
+    } else {
+      setStatus(result);
+      setClicked(true);
+      onAttendance(true, result); // 출석 상태 전달
+    }
+  };
+
+  const { bgColor, textColor, text } = getAttendanceStyle(status, clicked, c);
+
+  return (
+    <ButtonContainer
+      $bgColor={bgColor}
+      $textColor={textColor}
+      onClick={handleClick}
+    >
+      {text}
+    </ButtonContainer>
+  );
 };
 
 export default AttendanceButton;
