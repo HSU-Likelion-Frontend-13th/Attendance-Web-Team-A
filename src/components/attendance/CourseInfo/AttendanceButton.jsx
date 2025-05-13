@@ -17,6 +17,11 @@ const ButtonContainer = styled.div`
   justify-content: center;
   border-radius: 40px;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
+  }
 `;
 
 // 출석하기 버튼
