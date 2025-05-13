@@ -5,10 +5,10 @@ import * as S from "./Login.style";
 
 const Login = () => {
     return (
-        <div>
+        <S.LoginPageWrapper>
         <LoginHeader />
         <LoginSession />
-        </div>
+        </S.LoginPageWrapper>
     );
 }
 
