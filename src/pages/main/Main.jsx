@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/attendance/header/Header";
 import * as S from "./Main.style";
 
@@ -7,9 +7,18 @@ import AttendanceInfo from "../../components/attendance/attendanceInfo/Attendanc
 import Profile from "../../components/attendance/profile/Profile";
 
 const Main = () => {
+  const [timer, setTimer] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <>
-      <Header />
+      <Header timer={timer} />
       <S.MainContainer>
         <S.LeftColumn>
           <CourseInfo />
