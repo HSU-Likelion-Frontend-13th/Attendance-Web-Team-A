@@ -2,34 +2,34 @@ import styled from "styled-components";
 
 // LoginSession
 export const LoginSessionWrapper = styled.div`
-  margin-top: 149px;
+  margin-top: 9.31rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 49px;
+  gap: 3.06rem;
 `;
 
 // LoginForm용
 export const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
 `;
 
 export const LabelRow = styled.div`
   display: flex;
   align-items: center;
-  gap: 37px;
+  gap: 2.31rem;
 `;
 
 export const LabelText = styled.label`
-  width: 70px;
-  font-size: 30px;
+  width: 3.64vw;
+  font-size: 1.87rem;
   font-weight: 400;
 `;
 
 export const CheckBoxWrapper = styled.div`
-  margin-bottom: 21px;
+  margin-bottom: 1.31;
 `;
 
 export const ErrorWrapper = styled.div`
@@ -43,14 +43,14 @@ export const ErrorWrapper = styled.div`
   }
 
   svg {
-    font-size: 40px;
-    margin-right: 9px;
+    font-size: 2.5rem;
+    margin-right: 0.56rem;
     vertical-align: middle;
   }
 `;
 
 export const ErrorMessage = styled.span`
-  font-size: 23px;
+  font-size: 1.43rem;
   font-weight: 500;
 `;
 

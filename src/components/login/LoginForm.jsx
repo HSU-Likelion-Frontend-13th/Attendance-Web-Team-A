@@ -74,9 +74,9 @@ const LoginForm = () => {
       <S.ButtonWrapper>
         <ConfirmButton
           title="LOGIN"
-          width="523px"
-          height="91px"
-          fontSize="40px"
+          width="27.23vw"
+          height="5.68rem"
+          fontSize="2.5rem"
           fontWeight="600"
           onClick={handleLogin}
         />

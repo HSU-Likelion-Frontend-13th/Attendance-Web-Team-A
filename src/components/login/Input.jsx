@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const InputField = styled.input`
-  width: 464px;
-  height: 74px;
-  padding: 19px 35px;
-  font-size: 30px;
+  width: 24.16vw;
+  height: 4.62rem;
+  padding: 1.18rem 2.18rem;
+  font-size: 1.87rem;
   font-weight: 400;
   border: ${({ isError }) => (isError ? "1px solid #EB3223" : "none")};
   border-radius: 50px;
@@ -15,7 +15,7 @@ const InputField = styled.input`
 
   &::placeholder {
     color: #9e9e9e;
-    font-size: 30px;
+    font-size: 1.87rem;
     font-weight: 400;
   }
 
