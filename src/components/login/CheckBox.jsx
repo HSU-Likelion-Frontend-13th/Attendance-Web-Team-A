@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import CHECKBOX_OFF from "../../assets/images/check-normal.png";
+import CHECKBOX_ON from "../../assets/images/check-selcet.png";
 
 const CheckBoxWrapper = styled.label`
   display: flex;
@@ -7,23 +9,28 @@ const CheckBoxWrapper = styled.label`
   gap: 0.43rem;
   font-size: 1.43rem;
   font-weight: 500;
-  color: #999999;
+  cursor: pointer;
 `;
 
-const CheckBoxInput = styled.input`
+const CheckBoxImg = styled.img`
   width: 2.08vw;
-  height: 2.5rem;
-
-  &:checked {
-    background-color: #014099;
-  }
 `;
 
-const CheckBox = ({ label = "자동 로그인" }) => {
+const CheckBoxLabel = styled.span`
+  color: ${({ checked }) => (checked ? "#014099" : "#999999")};
+`;
+
+const CheckBox = ({ label }) => {
+  const [checked, setChecked] = useState(false);
+
+  const handleCheck = () => {
+    setChecked(!checked);
+  };
+
   return (
-    <CheckBoxWrapper>
-      <CheckBoxInput type="checkbox" />
-      {label}
+    <CheckBoxWrapper onClick={handleCheck}>
+      <CheckBoxImg src={checked ? CHECKBOX_ON : CHECKBOX_OFF} alt="체크박스" />
+      <CheckBoxLabel checked={checked}>{label}</CheckBoxLabel>
     </CheckBoxWrapper>
   );
 };
