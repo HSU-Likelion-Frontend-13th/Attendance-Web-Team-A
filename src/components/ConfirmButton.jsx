@@ -26,6 +26,7 @@ const ConfirmButton = ({
 }) => {
   return (
     <ButtonContainer
+      type="button"
       width={width}
       height={height}
       fontSize={fontSize}

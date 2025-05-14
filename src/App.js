@@ -1,12 +1,14 @@
-import Main from "./pages/main/Main";
+import React from "react";
+import { Outlet } from "react-router-dom";
 import GlobalStyle from "./styles/globalStyles";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Main />
+      <Outlet />
     </>
   );
 }
+
 export default App;
