@@ -13,8 +13,13 @@ const MyInfo = () => {
         <S.UserTrack>{user.tracks.join(" / ")}</S.UserTrack>
       </S.UserInfo>
       <S.ButtonRow>
-        <ProfileButton icon={<IoPersonSharp />} label="마이페이지" />
-        <ProfileButton icon={<IoIosUnlock />} label="로그아웃" withBorder />
+        <ProfileButton icon={<IoPersonSharp />} label="마이페이지" to={"/my"} />
+        <ProfileButton
+          icon={<IoIosUnlock />}
+          label="로그아웃"
+          to={"/login"}
+          withBorder
+        />
       </S.ButtonRow>
     </S.MyInfoContainer>
   );
