@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Input from "./Input";
 import CheckBox from "./CheckBox";
 import ConfirmButton from "../ConfirmButton";
@@ -6,6 +7,14 @@ import * as S from "./LoginSession.styles";
 
 
 const LoginForm = () => {
+
+    const navigate = useNavigate();
+
+    const handleLogin = (e) => {
+        e.preventDefault();
+        navigate("/main");
+    };
+
     return (
         <S.FormWrapper>
             <S.LabelRow>
@@ -29,6 +38,7 @@ const LoginForm = () => {
                 height="91px"
                 fontSize="40px"
                 fontWeight="600"
+                onClick={handleLogin}
             />
             </S.ButtonWrapper>
         </S.FormWrapper>
