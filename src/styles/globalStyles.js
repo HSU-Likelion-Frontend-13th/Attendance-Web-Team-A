@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     }
     
     body {
-        font-family: 'Pretendard', sans-serif;
+        font-family: "Pretendard Variable", Pretendard, Arial, Helvetica, sans-serif;
         background-color: ${colors.backgroundColor};
     }
     button {
