@@ -40,6 +40,7 @@ const LoginForm = () => {
           placeholder="이름을 입력하세요"
           value={form.name}
           onChange={handleChange}
+          isError={isSubmitted && !isValid.name}
         />
       </S.LabelRow>
 
@@ -50,6 +51,7 @@ const LoginForm = () => {
           placeholder="학번을 입력하세요"
           value={form.studentId}
           onChange={handleChange}
+          isError={isSubmitted && !isValid.studentId}
         />
       </S.LabelRow>
 

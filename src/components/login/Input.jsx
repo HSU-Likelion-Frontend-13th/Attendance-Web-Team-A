@@ -7,9 +7,10 @@ const InputField = styled.input`
   padding: 19px 35px;
   font-size: 30px;
   font-weight: 400;
-  border: none;
+  border: ${({ isError }) => (isError ? "1px solid #EB3223" : "none")};
   border-radius: 50px;
-  background-color: #d9d9d9;
+  background-color: ${({ isError }) =>
+    isError ? "rgba(235, 50, 35, 0.3)" : "#D9D9D9"};
   outline: none;
 
   &::placeholder {
@@ -19,7 +20,14 @@ const InputField = styled.input`
   }
 `;
 
-const Input = ({ type = "text", placeholder, value, onChange, id }) => {
+const Input = ({
+  type = "text",
+  placeholder,
+  value,
+  onChange,
+  id,
+  isError,
+}) => {
   return (
     <InputField
       id={id}
@@ -27,6 +35,7 @@ const Input = ({ type = "text", placeholder, value, onChange, id }) => {
       placeholder={placeholder}
       value={value}
       onChange={onChange}
+      isError={isError}
     />
   );
 };
