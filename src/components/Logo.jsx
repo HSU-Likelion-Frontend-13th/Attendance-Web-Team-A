@@ -5,7 +5,6 @@ const LogoImage = styled.img`
   display: block;
   width: ${(props) => props.$width || "auto"};
   height: ${(props) => props.$height || "auto"};
-  max-width: ${(props) => props.$maxWidth || "8rem"};
   object-fit: contain;
 `;
 
