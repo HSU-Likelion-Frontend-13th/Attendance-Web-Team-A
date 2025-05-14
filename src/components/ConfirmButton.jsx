@@ -13,6 +13,11 @@ const ButtonContainer = styled.button`
   border-radius: 20px;
   font-weight: 400;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
+  }
 `;
 
 // #014099 색상의 border-radius 20px인 버튼

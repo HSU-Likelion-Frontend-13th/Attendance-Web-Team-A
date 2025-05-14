@@ -11,6 +11,10 @@ const ButtonWrapper = styled.button`
   font-weight: 300;
   cursor: pointer;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   svg {
     width: 1.56rem;
     height: 1.56rem;

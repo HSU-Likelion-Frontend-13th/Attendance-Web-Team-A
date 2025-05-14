@@ -18,6 +18,10 @@ const InputField = styled.input`
     font-size: 30px;
     font-weight: 400;
   }
+
+  &:focus {
+    border: 1px solid #9e9e9e;
+  }
 `;
 
 const Input = ({
