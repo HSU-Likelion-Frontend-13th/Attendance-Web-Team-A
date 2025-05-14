@@ -8,6 +8,8 @@ import {
 import App from "./App";
 import Login from "./pages/login/Login";
 import Main from "./pages/main/Main";
+import MyPage from "./pages/MyPage";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,8 @@ const router = createBrowserRouter([
       { path: "", element: <Navigate to="/login" replace /> },
       { path: "login", element: <Login /> }, // 로그인 페이지
       { path: "main", element: <Main /> }, // 메인 페이지
+      { path: "my", element: <MyPage /> }, // 마이 페이지
+      { path: "*", element: <NotFound /> }, // 404 페이지
     ],
   },
 ]);
@@ -27,4 +31,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-  

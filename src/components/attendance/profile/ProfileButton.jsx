@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const ButtonWrapper = styled.button`
@@ -21,9 +22,11 @@ const ButtonWrapper = styled.button`
   }
 `;
 
-const ProfileButton = ({ icon, label, onClick }) => {
+const ProfileButton = ({ icon, label, to }) => {
+  const navigate = useNavigate();
+
   return (
-    <ButtonWrapper onClick={onClick}>
+    <ButtonWrapper onClick={() => navigate(to)}>
       {icon}
       {label}
     </ButtonWrapper>
